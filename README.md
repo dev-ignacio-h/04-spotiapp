@@ -1,5 +1,7 @@
 # Spotiapp
 
+## Aplicación realizada siguiendo curso de Fernando Herrera en Udemy: https://www.udemy.com/course/angular-2-fernando-herrera/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
 ## Development server
