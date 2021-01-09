@@ -26,8 +26,14 @@ export class SpotifyService {
     return this.getQuery(query).pipe(map((data) => data['albums'].items));
   }
 
-  getArtista(term) {
+  getArtistas(term) {
     const query = `search?q=${term}&type=artist&limit=15`;
     return this.getQuery(query).pipe(map((data) => data['artists'].items));
+  }
+
+  getArtista(id: string) {
+    const query = `artists/${id}`;
+    return this.getQuery(query);
+    // .pipe(map((data) => data['artists'].items));
   }
 }

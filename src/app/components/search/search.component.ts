@@ -13,7 +13,7 @@ export class SearchComponent {
   buscar(term: string) {
     if (term.length) {
       this.loading = true;
-      this.spotify.getArtista(term).subscribe((data: any) => {
+      this.spotify.getArtistas(term).subscribe((data: any) => {
         this.artistas = data;
         this.loading = false;
       });
