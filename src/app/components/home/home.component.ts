@@ -14,7 +14,6 @@ export class HomeComponent {
     this.spotify.getNewReleases().subscribe((data: any) => {
       this.nuevasCanciones = data;
       this.loading = false;
-
     });
   }
 }
