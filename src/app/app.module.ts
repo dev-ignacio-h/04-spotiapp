@@ -9,9 +9,13 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
-//Routes
+// Routes
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,8 @@ import { ROUTES } from './app.routes';
     SearchComponent,
     ArtistComponent,
     NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
   ],
   imports: [
     BrowserModule,
