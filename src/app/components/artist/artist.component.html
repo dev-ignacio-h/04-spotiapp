@@ -37,12 +37,27 @@
       <tbody>
         <tr *ngFor="let track of topTracks">
           <td>
-            <img class="img-thumb" [src]="track.album.images | noimage" alt="">
+            <img
+              class="img-thumb"
+              [src]="track.album.images | noimage"
+              alt=""
+            />
           </td>
           <td>{{ track.album.name }}</td>
           <td>{{ track.name }}</td>
           <td>
-            <audio [src]="track.preview_url" controls></audio>
+            <!-- <iframe src="https://open.spotify.com/embed/track/3Y6XWs8xMlCngyIxNOFnsp" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+            <iframe
+              [src]="
+                track.id | domseguro
+              "
+              width="300"
+              height="80"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+            <!-- <audio [src]="track.preview_url" controls></audio> -->
           </td>
         </tr>
       </tbody>
